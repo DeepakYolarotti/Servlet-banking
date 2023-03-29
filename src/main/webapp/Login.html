@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<style>
+        body {
+	font-family: Arial, sans-serif;
+	background-color: #F0F0F0;
+}
+
+.login-form {
+	margin: 50px auto;
+	padding: 20px;
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px #888888;
+	max-width: 500px;
+}
+
+.login-form h2 {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.login-form input[type=text],
+.login-form input[type=password] {
+	display: block;
+	margin: 10px 0;
+	padding: 10px;
+	border: 1px solid #CCCCCC;
+	border-radius: 5px;
+	width: 90%;
+}
+
+.login-form input[type=submit],
+.login-form input[type=button] {
+	margin-top: 20px;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	color: #FFFFFF;
+	background-color: #4CAF50;
+	cursor: pointer;
+}
+
+.login-form input[type=submit]:hover,
+.login-form input[type=button]:hover {
+	background-color: #3E8E41;
+}
+
+.login-form .cancel-btn {
+	background-color: #F44336;
+}
+
+.login-form .cancel-btn:hover {
+	background-color: #D32F2F;
+}
+
+.login-form .form-buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+    </style>
+</head>
+<body>
+	<div class="login-form">
+		<h2>Login</h2>
+		<form action="customerlogin" method="post">
+			Customer Id:<input type="text" name="cust_id" placeholder="Enter the Customer ID" required pattern="{0-9}{8}"> 
+			Password:<input type="password" name="password" placeholder="Enter the Password" required>
+			<div class="form-buttons">
+				<button type="submit" class="login-btn">Login</button>
+				<button type="button" class="cancel-btn">Cancel</button>
+			</div>
+		</form>
+        <a href="Signup.html">New? Click here to create an Account</a>
+        <br><br>
+        <a href="Home.html"><button>Home</button></a>
+	</div>
+</body>
+</html>

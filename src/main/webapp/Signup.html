@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Signup Page</title>
+	<style>
+	body {
+		font-family: Arial, sans-serif;
+		background-color: #24cffa;
+		}
+	.signup-form 
+	{
+	margin: 50px auto;
+	padding: 20px;
+	background-color: #ffffff;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px #888888;
+	max-width: 500px;
+	}
+	.signup-form h2 
+	{
+	margin-bottom: 20px;
+	text-align: center;
+	}
+	.signup-form input[type=text],
+	.signup-form input[type=number],
+	.signup-form input[type=email],
+	.signup-form input[type=password],
+	.signup-form select 
+	{
+	display: block;
+	margin: 10px 0;
+	padding: 10px;
+	border: 1px solid #CCCCCC;
+	border-radius: 5px;
+	width:90%;
+	}	
+	.signup-form label 
+	{
+	margin-top: 10px;
+	display: block;
+	}
+	.signup-form .cancel-btn 
+	{
+	background-color: #F44336;
+	}
+	</style>
+</head>
+<body>
+    <div class="signup-form">
+		<h2>Signup</h2>
+		<form action="customersignup" method="post">
+			Name:<input type="text" name="name" placeholder="Enter the Name" required="required"><br>
+			Mobile:<input type="number" name="mobile" placeholder="Enter the Mobile" required="required"><br>
+			Email:<input type="email" name="email" placeholder="Enter the Email" required="required"><br>
+			Password:<input type="password" name="password" placeholder="Enter the Password" required="required"><br>
+			Gender:<input type="radio" name="gender" value="male" readonly="readonly">Male 
+			<input type="radio" name="gender" value="female">Female<br>
+
+			<label for="dob">Date of Birth:</label>
+			<input type="date" id="dob" name="dob" required>
+			<div class="form-buttons">
+				<button type="submit" class="signup-btn">Signup</button>
+				<button type="reset" class="cancel-btn">Cancel</button>
+			</div>
+		</form>
+		
+		<a href="Login.html">Already have Account?click here to Login</a><br><br>
+		
+		 <a href="Home.html"><button>Home</button></a>
+	</div>
+</body>
+</html>
